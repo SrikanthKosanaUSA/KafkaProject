@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaConsumer\\KafkaConsumer.csproj": {}
+    "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaProducer\\KafkaProducer.csproj": {}
   },
   "projects": {
-    "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaConsumer\\KafkaConsumer.csproj": {
+    "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaProducer\\KafkaProducer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaConsumer\\KafkaConsumer.csproj",
-        "projectName": "KafkaConsumer",
-        "projectPath": "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaConsumer\\KafkaConsumer.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaProducer\\KafkaProducer.csproj",
+        "projectName": "KafkaProducer",
+        "projectPath": "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaProducer\\KafkaProducer.csproj",
         "packagesPath": "C:\\Users\\Srikanth\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaConsumer\\obj\\",
+        "outputPath": "D:\\MyProjects\\Kafka-Proj\\KafkaProject\\KafkaProducer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
