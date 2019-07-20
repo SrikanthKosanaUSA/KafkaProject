@@ -9,3 +9,14 @@ D:\MyProjects\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.AssemblyInfo.c
 D:\MyProjects\KafkaConsumer\bin\Debug\netcoreapp2.1\KafkaConsumer.pdb
 D:\MyProjects\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.dll
 D:\MyProjects\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.pdb
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\bin\Debug\netcoreapp2.1\KafkaConsumer.deps.json
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\bin\Debug\netcoreapp2.1\KafkaConsumer.runtimeconfig.json
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\bin\Debug\netcoreapp2.1\KafkaConsumer.runtimeconfig.dev.json
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\bin\Debug\netcoreapp2.1\KafkaConsumer.dll
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\bin\Debug\netcoreapp2.1\KafkaConsumer.pdb
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.csprojAssemblyReference.cache
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.csproj.CoreCompileInputs.cache
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.AssemblyInfoInputs.cache
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.AssemblyInfo.cs
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.dll
+D:\MyProjects\Kafka-Proj\KafkaProject\KafkaConsumer\obj\Debug\netcoreapp2.1\KafkaConsumer.pdb

@@ -1,4 +1,6 @@
 ﻿using Confluent.Kafka;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -7,61 +9,16 @@ namespace KafkaConsumer
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            var config = new ConsumerConfig
+
+            await new HostBuilder().ConfigureServices((HostExecutionContext, services) =>
             {
-                GroupId = "ConsumerGroup",
-                BootstrapServers = "localhost:9092",
-                EnableAutoCommit = false,
-                EnablePartitionEof = true,
-                AutoOffsetReset = AutoOffsetReset.Earliest
+                services.AddHostedService<ServingConsumption>();
+            })
+                .RunConsoleAsync();
 
-            };
-
-            using (var reader = new ConsumerBuilder<Ignore, string>(config).Build())
-            {
-                reader.Subscribe("test");
-                CancellationTokenSource cts = new CancellationTokenSource();
-                Console.CancelKeyPress += (_, e) =>
-                {
-                    e.Cancel = true;
-                    cts.Cancel();
-                };
-
-                try
-                {
-                    while (true)
-                    {
-                        try
-                        {
-                            var resultset = reader.Consume(cts.Token);
-
-                            if (resultset.IsPartitionEOF)
-                            {
-                                Console.WriteLine($"Hey!!!, you reached the edge of topic {resultset.Topic}, " +
-                                                  $"partition {resultset.Partition}, " +
-                                                  $"offset {resultset.Offset}."
-                                                  );
-                                continue;
-                            }
-
-                            Console.WriteLine($"The message is '{resultset.Value}' " +
-                                              $"at offset number:::: '{resultset.Offset}' ");
-                        }
-                        catch (ConsumeException e)
-                        {
-                            Console.WriteLine($"Error occured: {e.Error.Reason}");
-                        }
-                    }
-                }
-                catch (OperationCanceledException)
-                {
-                    reader.Close();
-                    //Console.WriteLine("Hello World!");
-                }
-            }
-        }
+        }    
     }
 
 }
